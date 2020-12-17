@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import background from "../assets/images/minimalLinesBG.png";
 import { makeStyles } from '@material-ui/core/styles';
 import { useState, useEffect } from 'react'
 import Avatar from '@material-ui/core/Avatar';
@@ -70,7 +71,7 @@ function Homepage() {
   return (
     <Grommet plain>
 
-      <header className="App-header" style={{ shadows: ["none"], padding: 2 }}>
+      <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})` }}>
 
         <Avatar alt="Jatin Arora" src={require('../assets/images/webLogoDark.png')} className={classes.large} />
         <Card className={classes.cardRoot} variant="outlined">
