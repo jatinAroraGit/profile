@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import background from "../assets/images/minimalLinesBG.png";
+import background from "../assets/images/easyBG.svg";
 import { makeStyles } from '@material-ui/core/styles';
 import { useState, useEffect } from 'react'
 import Avatar from '@material-ui/core/Avatar';
@@ -8,9 +8,10 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
+import Button from '@material-ui/core/Button'
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import { Button, Grommet, Sidebar, Nav, Box } from 'grommet';
+import { Grommet, Sidebar, Nav, Box } from 'grommet';
 import { Help, Home, Document } from 'grommet-icons';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
@@ -69,9 +70,10 @@ function Homepage() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
   return (
-    <Grommet plain>
+    <div>
 
-      <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})` }}>
+
+      <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
 
         <Avatar alt="Jatin Arora" src={require('../assets/images/webLogoDark.png')} className={classes.large} />
         <Card className={classes.cardRoot} variant="outlined">
@@ -117,7 +119,9 @@ function Homepage() {
 
                 </Grid>
                 <Grid style={{ margin: 2 }}>
+                  <Button primary>Click Test</Button>
                   <Paper className={classes.paper}  >
+
                     <Button style={{ margin: 2 }} primary label="Native Mobile" onClick={() => setShowModal(true)} />
                   </Paper>
 
@@ -133,7 +137,7 @@ function Homepage() {
               </Grid>
             </Grid>
             <Dialog onClose={() => setShowModal(false)} aria-labelledby="simple-dialog-title" open={showModal}>
-              <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
+              <DialogTitle id="simple-dialog-title">Information</DialogTitle>
               <h2>dasdkaspkdfp kfvcas </h2>
               <h2>dasdkaspkdfp kfvcas </h2>
               <h2>dasdkaspkdfp kfvcas </h2>
@@ -170,10 +174,13 @@ function Homepage() {
       </header>
 
 
+      <Button primary>Click Inside</Button>
 
 
 
-    </Grommet>
+
+      <Button primary>Click</Button>
+    </div>
   );
 }
 

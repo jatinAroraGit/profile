@@ -18,10 +18,11 @@ import {
 } from 'react-router-dom'
 import About from './About';
 import NotFound from './NotFound';
+import { ImportantDevices } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -53,14 +54,14 @@ function Navbar() {
     return (
       <div className={classes.root}>
 
-        <AppBar position="fixed" style={{ backgroundColor: "transparent", boxShadow: 'none' }}>
+        <AppBar position="fixed" style={{ backgroundColor: "transparent", boxShadow: 'none', zIndex: 5, width: "auto" }}>
           <Toolbar>
 
             <Sidebar background="brand" round="small" alignSelf="center" alignContent="center" justify="center" align="center" style={{ marginTop: 15 }}
 
               header={
                 <div>
-                  <Nav gap="small">
+                  <Nav wrap="true" gap="small">
                     <Button icon={<Close />} hoverIndicator color="#A2423D" style={{ backgroundColor: "#A2423D", marginBottom: 5, borderRadius: 50, alignSelf: "center" }} onClick={() => setShowNav(false)} />
 
                   </Nav>
@@ -76,7 +77,7 @@ function Navbar() {
             >
               <Nav gap="small">
                 <Link to="/">
-                  <Button icon={<Home />} hoverIndicator primary style={{ marginBottom: 5 }} />
+                  <Button icon={<Home />} onClick={() => setShowNav(false)} hoverIndicator primary style={{ marginBottom: 5 }} />
                 </Link>
                 <Link to="/resume">
                   <Button icon={<Document />} hoverIndicator primary color="accent-4" style={{ marginBottom: 10 }} />
@@ -90,9 +91,11 @@ function Navbar() {
 
                 <Button icon={<Github />} hoverIndicator primary color="dark-1" style={{ marginBottom: 10 }} onClick={() => window.open('https://www.github.com/jatinAroraGit/')} />
                 <Link to="/about">
-                  <Button icon={<Mail />} hoverIndicator primary onClick={() => window.open('mailto:"jatin.arora08@outlook.com"?subject="None"')} />
+                  <Button icon={<Mail />} hoverIndicator primary onClick={() => window.open('mailto:jatin.arora08@outlook.com')} />
                 </Link>
+
                 <Link to="/notFound" >404</Link>
+                <Link to="/dev" >DEV</Link>
 
 
 
@@ -111,7 +114,7 @@ function Navbar() {
     return (
       <div className={classes.root}>
 
-        <AppBar position="fixed" style={{ backgroundColor: "transparent", boxShadow: 'none' }}>
+        <AppBar position="fixed" style={{ backgroundColor: "transparent", boxShadow: 'none', width: "auto" }}>
           <Toolbar>
 
             <Sidebar background="brand" round="small" alignSelf="start" style={{ marginTop: 15 }}

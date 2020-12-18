@@ -19,6 +19,7 @@ import {
 import About from '../src/components/About';
 import NotFound from './components/NotFound';
 import Resume from './components/Resume';
+import { Dev } from './components/Dev';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,6 +61,9 @@ function App() {
           </Route>
           <Route path="/resume">
             <Resume />
+          </Route>
+          <Route path="/dev">
+            <Dev />
           </Route>
           <Route path="*">
             <NotFound />
