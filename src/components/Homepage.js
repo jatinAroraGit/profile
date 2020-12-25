@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button'
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { Grommet, Sidebar, Nav, Box } from 'grommet';
-import { Help, Home, Document } from 'grommet-icons';
+import { Help, Home, Document, Code, Java } from 'grommet-icons';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 import Typography from '@material-ui/core/Typography';
@@ -96,6 +96,38 @@ function Homepage() {
             <Button size="small" color="#F06292">What I Do ?</Button>
           </CardActions>
         </Card>
+
+
+        <Box
+          direction="row-responsive"
+          pad="none"
+          style={{ margin: 10 }}
+
+        >
+
+          <Box pad="large" background="#F06292" style={{ alignItems: "center", justifyContent: "center" }}>
+
+            <Code color="#FFFFFF" size="xlarge" />
+          </Box>
+          <Box pad="large" background="#42A5F5" style={{ maxWidth: 600 }} >
+            <Java color="#FFFFFF" size="medium" />
+            <p style={{ fontSize: 16 }}>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          </Box>
+        </Box>
+
+
+        <Card className={classes.cardRoot} style={{ margin: 10 }} variant="outlined">
+
+          <Box
+            direction="row"
+            pad="none"
+          >
+            <Box pad="large" background="#FF00FF" />
+            <Box pad="large" background="#000000" />
+          </Box>
+
+        </Card>
+
         <Card className={classes.cardRoot} style={{ margin: 10 }} variant="outlined">
           <CardContent>
             <Grid item xs={12}>
@@ -107,7 +139,7 @@ function Homepage() {
 
                 </Grid>
                 <Grid style={{ margin: 2 }}>
-                  <Paper className={classes.paper}  >
+                  <Paper className={classes.paper}   >
                     <Button style={{ margin: 2 }} primary label="Back End" onClick={() => setShowModal(true)} />
                   </Paper>
 
@@ -119,7 +151,7 @@ function Homepage() {
 
                 </Grid>
                 <Grid style={{ margin: 2 }}>
-                  <Button primary>Click Test</Button>
+
                   <Paper className={classes.paper}  >
 
                     <Button style={{ margin: 2 }} primary label="Native Mobile" onClick={() => setShowModal(true)} />
@@ -150,26 +182,6 @@ function Homepage() {
           </CardContent>
 
         </Card>
-
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2> <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2> <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
-        <h2>dasdkaspkdfp kfvcas </h2>
 
       </header>
 
