@@ -1,31 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "544457262dd2ebc28370bb373afacb81",
+    "revision": "c459b4f5b579ed7859cb3d2e29ec90a1",
     "url": "/profile/index.html"
   },
   {
-    "revision": "5305cd904f1552a8960f",
+    "revision": "2f953c481dc31ef05f6d",
     "url": "/profile/static/css/2.ccbd3d24.chunk.css"
   },
   {
-    "revision": "17753501aedffcdd5dd7",
+    "revision": "6f2e2e2ee9d9fb552b61",
     "url": "/profile/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "5305cd904f1552a8960f",
-    "url": "/profile/static/js/2.3a70e715.chunk.js"
+    "revision": "2f953c481dc31ef05f6d",
+    "url": "/profile/static/js/2.c3dc1a55.chunk.js"
   },
   {
     "revision": "1937a0fc6634269e5f47f8181e27fdc7",
-    "url": "/profile/static/js/2.3a70e715.chunk.js.LICENSE.txt"
+    "url": "/profile/static/js/2.c3dc1a55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "17753501aedffcdd5dd7",
-    "url": "/profile/static/js/main.47eac64e.chunk.js"
+    "revision": "6f2e2e2ee9d9fb552b61",
+    "url": "/profile/static/js/main.e70fb64c.chunk.js"
   },
   {
     "revision": "9603bd92365aee75a56a",
     "url": "/profile/static/js/runtime-main.cd7abead.js"
+  },
+  {
+    "revision": "94483d9f0d253f67ab7dd21f745c0f36",
+    "url": "/profile/static/media/analytics-analysis-svgrepo-com.94483d9f.svg"
+  },
+  {
+    "revision": "aa7e45f453ad44145c37f233ac3c0366",
+    "url": "/profile/static/media/bgSVG.aa7e45f4.svg"
+  },
+  {
+    "revision": "e93189a0845b0238f20c4dc5dbe2468a",
+    "url": "/profile/static/media/code-svgrepo-com.e93189a0.svg"
+  },
+  {
+    "revision": "3bfbd0d4e13c0902f5b546a58fa4cd05",
+    "url": "/profile/static/media/database-svgrepo-com.3bfbd0d4.svg"
   },
   {
     "revision": "8fef400b0b38db5e04d2d43314595d00",
@@ -132,7 +148,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile/static/media/roboto-latin-900italic.ebf6d164.woff2"
   },
   {
+    "revision": "b3ab8c7fa3faa22932e49134a2f93f17",
+    "url": "/profile/static/media/svgTiles.b3ab8c7f.svg"
+  },
+  {
     "revision": "590bb8eb1589b69b9c124e60ac079a4d",
     "url": "/profile/static/media/webLogoDark.590bb8eb.png"
+  },
+  {
+    "revision": "842712ca44e66c829311bf8f268174e9",
+    "url": "/profile/static/media/website-svgrepo-com.842712ca.svg"
   }
 ]);

@@ -1,29 +1,35 @@
 {
   "files": {
     "main.css": "/profile/static/css/main.5f361e03.chunk.css",
-    "main.js": "/profile/static/js/main.47eac64e.chunk.js",
-    "main.js.map": "/profile/static/js/main.47eac64e.chunk.js.map",
+    "main.js": "/profile/static/js/main.e70fb64c.chunk.js",
+    "main.js.map": "/profile/static/js/main.e70fb64c.chunk.js.map",
     "runtime-main.js": "/profile/static/js/runtime-main.cd7abead.js",
     "runtime-main.js.map": "/profile/static/js/runtime-main.cd7abead.js.map",
     "static/css/2.ccbd3d24.chunk.css": "/profile/static/css/2.ccbd3d24.chunk.css",
-    "static/js/2.3a70e715.chunk.js": "/profile/static/js/2.3a70e715.chunk.js",
-    "static/js/2.3a70e715.chunk.js.map": "/profile/static/js/2.3a70e715.chunk.js.map",
+    "static/js/2.c3dc1a55.chunk.js": "/profile/static/js/2.c3dc1a55.chunk.js",
+    "static/js/2.c3dc1a55.chunk.js.map": "/profile/static/js/2.c3dc1a55.chunk.js.map",
     "index.html": "/profile/index.html",
-    "precache-manifest.44db70478a5dbd8a2a86b27f862c23ae.js": "/profile/precache-manifest.44db70478a5dbd8a2a86b27f862c23ae.js",
+    "precache-manifest.3a272a449814264dccdc76e62406f7ca.js": "/profile/precache-manifest.3a272a449814264dccdc76e62406f7ca.js",
     "service-worker.js": "/profile/service-worker.js",
     "static/css/2.ccbd3d24.chunk.css.map": "/profile/static/css/2.ccbd3d24.chunk.css.map",
     "static/css/main.5f361e03.chunk.css.map": "/profile/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.3a70e715.chunk.js.LICENSE.txt": "/profile/static/js/2.3a70e715.chunk.js.LICENSE.txt",
+    "static/js/2.c3dc1a55.chunk.js.LICENSE.txt": "/profile/static/js/2.c3dc1a55.chunk.js.LICENSE.txt",
+    "static/media/analytics-analysis-svgrepo-com.svg": "/profile/static/media/analytics-analysis-svgrepo-com.94483d9f.svg",
+    "static/media/bgSVG.svg": "/profile/static/media/bgSVG.aa7e45f4.svg",
+    "static/media/code-svgrepo-com.svg": "/profile/static/media/code-svgrepo-com.e93189a0.svg",
+    "static/media/database-svgrepo-com.svg": "/profile/static/media/database-svgrepo-com.3bfbd0d4.svg",
     "static/media/easyBG.svg": "/profile/static/media/easyBG.8fef400b.svg",
     "static/media/logo.svg": "/profile/static/media/logo.5d5d9eef.svg",
     "static/media/index.css": "/profile/static/media/roboto-latin-900italic.ebf6d164.woff2",
-    "static/media/webLogoDark.png": "/profile/static/media/webLogoDark.590bb8eb.png"
+    "static/media/svgTiles.svg": "/profile/static/media/svgTiles.b3ab8c7f.svg",
+    "static/media/webLogoDark.png": "/profile/static/media/webLogoDark.590bb8eb.png",
+    "static/media/website-svgrepo-com.svg": "/profile/static/media/website-svgrepo-com.842712ca.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cd7abead.js",
     "static/css/2.ccbd3d24.chunk.css",
-    "static/js/2.3a70e715.chunk.js",
+    "static/js/2.c3dc1a55.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.47eac64e.chunk.js"
+    "static/js/main.e70fb64c.chunk.js"
   ]
 }
