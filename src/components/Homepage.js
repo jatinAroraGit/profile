@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 import background from "../assets/images/easyBG.svg";
+import tilesSvg from "../assets/images/svgTiles.svg";
+import svgBg from "../assets/images/bgSVG.svg";
 import { makeStyles } from '@material-ui/core/styles';
 import { useState, useEffect } from 'react'
 import Avatar from '@material-ui/core/Avatar';
@@ -25,7 +27,14 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     height: 140,
     width: 140,
-    backgroundColor: "#696969"
+    //backgroundColor: "#EF9A9A",
+    //backgroundImage: `url(${svgBg})`,
+    backgroundImage: `url(${tilesSvg})`,
+
+    justifyContent: "center"
+    , textAlign: "center",
+    color: "#FFFFFF"
+    , padding: 4
   },
   control: {
     padding: theme.spacing(2),
@@ -40,6 +49,10 @@ const useStyles = makeStyles((theme) => ({
   small: {
     width: theme.spacing(3),
     height: theme.spacing(3),
+  },
+  medium: {
+    width: theme.spacing(10),
+    height: theme.spacing(10),
   },
   large: {
     width: theme.spacing(28),
@@ -102,10 +115,13 @@ function Homepage() {
           direction="row-responsive"
           pad="none"
           style={{ margin: 10 }}
-
+          animation="fadeIn"
         >
 
-          <Box pad="large" background="#F06292" style={{ alignItems: "center", justifyContent: "center" }}>
+          <Box pad="large"
+            animation="fadeIn"
+
+            background="#F06292" style={{ alignItems: "center", justifyContent: "center" }}>
 
             <Code color="#FFFFFF" size="xlarge" />
           </Box>
@@ -115,46 +131,47 @@ function Homepage() {
           </Box>
         </Box>
 
-
-        <Card className={classes.cardRoot} style={{ margin: 10 }} variant="outlined">
-
-          <Box
-            direction="row"
-            pad="none"
-          >
-            <Box pad="large" background="#FF00FF" />
-            <Box pad="large" background="#000000" />
-          </Box>
-
-        </Card>
-
-        <Card className={classes.cardRoot} style={{ margin: 10 }} variant="outlined">
+        <Card className={classes.cardRoot} style={{
+          margin: 10, backgroundImage: `url(${svgBg})`
+        }} variant="outlined">
           <CardContent>
             <Grid item xs={12}>
               <Grid container justify="center" spacing="2">
-                <Grid style={{ margin: 2 }}>
+                <Grid style={{ margin: 2, alignItems: "center" }}>
                   <Paper className={classes.paper}  >
-                    <Button style={{ margin: 2 }} primary label="Front End" onClick={() => setShowModal(true)} />
+                    <Box align="center">
+                      <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/analytics-analysis-svgrepo-com.svg')} className={classes.medium} />
+                      <h3>Analysis</h3>
+                    </Box>
                   </Paper>
 
                 </Grid>
                 <Grid style={{ margin: 2 }}>
-                  <Paper className={classes.paper}   >
-                    <Button style={{ margin: 2 }} primary label="Back End" onClick={() => setShowModal(true)} />
+                  <Paper className={classes.paper}   > <Box align="center">
+                    <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/website-svgrepo-com.svg')} className={classes.medium} />
+                    <h3>Front End</h3>
+                    <Button style={{ margin: 2 }} primary label="Open" onClick={() => setShowModal(true)} />
+
+                  </Box>
                   </Paper>
 
                 </Grid>
                 <Grid style={{ margin: 2 }}>
                   <Paper className={classes.paper}  >
-                    <Button style={{ margin: 2 }} primary label="Database" onClick={() => setShowModal(true)} />
+                    <Box align="center">
+                      <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/code-svgrepo-com.svg')} className={classes.medium} />
+                      <h3>Back End</h3>
+                    </Box>
                   </Paper>
 
                 </Grid>
                 <Grid style={{ margin: 2 }}>
 
                   <Paper className={classes.paper}  >
-
-                    <Button style={{ margin: 2 }} primary label="Native Mobile" onClick={() => setShowModal(true)} />
+                    <Box align="center">
+                      <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/database-svgrepo-com.svg')} className={classes.medium} />
+                      <h3>Database</h3>
+                    </Box>
                   </Paper>
 
                 </Grid>
