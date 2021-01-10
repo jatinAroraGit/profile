@@ -1,15 +1,19 @@
 import React from 'react';
+import { useState, useEffect } from 'react'
 import '../App.css';
 import { makeStyles } from '@material-ui/core/styles';
+import resume from '../assets/docs/Resume.pdf';
 import Avatar from '@material-ui/core/Avatar';
 import Container from '@material-ui/core/Container';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import { Button, Grommet, Sidebar, Nav, Grid, Box } from 'grommet';
-import { Help, Home, Document } from 'grommet-icons';
+import { Help, Home } from 'grommet-icons';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,8 +50,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Resume() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
   return (
     <Grommet plain>
 
@@ -75,8 +86,12 @@ function Resume() {
             </Typography>
           </CardContent>
         </Card>
-      </header>
 
+      </header>
+      <div>
+
+
+      </div>
     </Grommet>
   );
 }

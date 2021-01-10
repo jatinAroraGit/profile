@@ -57,7 +57,7 @@ function Navbar() {
         <AppBar position="fixed" style={{ backgroundColor: "transparent", boxShadow: 'none', zIndex: 5, width: "auto" }}>
           <Toolbar>
 
-            <Sidebar background="brand" round="small" alignSelf="center" alignContent="center" justify="center" align="center" style={{ marginTop: 15 }}
+            <Sidebar background="brand" round="small" alignSelf="center" alignContent="center" justify="center" align="center" style={{ marginTop: 15, backgroundColor: "#424242" }}
 
               header={
                 <div>
@@ -65,7 +65,7 @@ function Navbar() {
                     <Button icon={<Close />} hoverIndicator color="#A2423D" style={{ backgroundColor: "#A2423D", marginBottom: 5, borderRadius: 50, alignSelf: "center" }} onClick={() => setShowNav(false)} />
 
                   </Nav>
-                  <Avatar src={require('../assets/images/webLogoDark.png')} size="medium" />
+                  {/**<Avatar src={require('../assets/images/webLogoDark.png')} size="medium" /> */}
                 </div>
               }
 
@@ -76,14 +76,14 @@ function Navbar() {
             */
             >
               <Nav gap="small">
-                <Link to="/">
-                  <Button icon={<Home />} onClick={() => setShowNav(false)} hoverIndicator primary style={{ marginBottom: 5 }} />
+                <Link to="/profile">
+                  <Button icon={<Home />} onClick={() => setShowNav(false)} hoverIndicator primary color="#81D4FA" style={{ marginBottom: 5 }} />
                 </Link>
                 <Link to="/resume">
-                  <Button icon={<Document />} hoverIndicator primary color="accent-4" style={{ marginBottom: 10 }} />
+                  <Button icon={<Document />} hoverIndicator primary color="#81D4FA" style={{ marginBottom: 10 }} />
                 </Link>
                 <Link to="/about">
-                  <Button icon={<Info />} hoverIndicator primary color="accent-4" style={{ marginBottom: 10, fontSize: "3px !important" }} />
+                  <Button icon={<Info />} hoverIndicator primary color="#81D4FA" style={{ marginBottom: 10, fontSize: "3px !important" }} />
 
                 </Link>
 
@@ -117,7 +117,7 @@ function Navbar() {
         <AppBar position="fixed" style={{ backgroundColor: "transparent", boxShadow: 'none', width: "auto" }}>
           <Toolbar>
 
-            <Sidebar background="brand" round="small" alignSelf="start" style={{ marginTop: 15 }}
+            <Sidebar background="brand" round="small" alignSelf="start" style={{ marginTop: 15, backgroundColor: "#424242" }}
 
             >
               <Nav gap="small">
