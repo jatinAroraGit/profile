@@ -77,7 +77,7 @@ function Navbar() {
             >
               <Nav gap="small">
                 <Link to="/profile">
-                  <Button icon={<Home />} onClick={() => setShowNav(false)} hoverIndicator primary color="#81D4FA" style={{ marginBottom: 5 }} />
+                  <Button icon={<Home />} hoverIndicator primary color="#81D4FA" style={{ marginBottom: 5 }} />
                 </Link>
                 <Link to="/resume">
                   <Button icon={<Document />} hoverIndicator primary color="#81D4FA" style={{ marginBottom: 10 }} />

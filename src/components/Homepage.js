@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import background from "../assets/images/Hydrogen.jpg";
+import background from "../assets/images/blues.jpg";
 import tilesSvg from "../assets/images/svgTiles.svg";
 import svgBg from "../assets/images/bgSVG.svg";
 import { makeStyles } from '@material-ui/core/styles';
@@ -116,6 +116,17 @@ function Homepage() {
 
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
+  const internalIp = require('internal-ip');
+  console.log("*****IP**********");
+  (async () => {
+    console.log(await internalIp.v6());
+    //=> 'fe80::1'
+
+    console.log(await internalIp.v4());
+    //=> '10.0.0.79'
+  })();
+
+  console.log(internalIp.v6.sync())
   return (
     <div>
 
@@ -154,12 +165,12 @@ function Homepage() {
           <Box pad="large"
             animation="fadeIn"
 
-            background="#F06292" style={{ alignItems: "center", justifyContent: "center" }}>
+            background="#000000" style={{ alignItems: "center", justifyContent: "center" }}>
 
             <Code color="#FFFFFF" size="xlarge" />
           </Box>
-          <Box pad="large" background="#42A5F5" style={{ maxWidth: 600 }} >
-            <Java color="#FFFFFF" size="medium" />
+          <Box pad="large" background="#FFFFFF" style={{ maxWidth: 600 }} >
+            <Java color="#000000" size="medium" />
             <p style={{ fontSize: 16 }}>The first code to output "hello world" was written by me at the age of 15 in Java using the well known System.out.println(). Since then I have dived into different seas of evergrowing programming languages. I have worked on both personal and work projects to become a full stack developer. For now I have my own project at hand which aims to provide a cross-platform app to people using react native. You can know more about me in detail by scrolling below. If you want an overview of my qualifications head over to the <Link to="/resume">resume</Link> page.</p>
           </Box>
         </Box>
@@ -208,14 +219,7 @@ function Homepage() {
                   </Paper>
 
                 </Grid>
-                {/*[0, 1, 2, 4].map((value) => (
-                  <Grid key={value} item>
-                    <Paper className={classes.paper}  >
-                      <Button style={{ margin: 5 }} primary label="Front End" onClick={() => setShowModal(true)} />
-                    </Paper>
 
-                  </Grid>
-                ))*/}
               </Grid>
             </Grid>
             <Dialog onClose={() => setShowModal(false)} aria-labelledby="simple-dialog-title" open={showModal}>

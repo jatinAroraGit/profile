@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import background from "../assets/images/Delicate.jpg";
+
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Container from '@material-ui/core/Container';
@@ -59,7 +61,7 @@ function NotFound() {
   return (
     <Grommet plain>
 
-      <header className="App-header" style={{ shadows: ["none"] }}>
+      <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
 
         <Card className={classes.cardRoot} variant="outlined">
           <CardContent>
