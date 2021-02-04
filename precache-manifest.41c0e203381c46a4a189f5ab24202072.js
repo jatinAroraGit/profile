@@ -1,35 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6680142d5edaebb8b25077d4dd43492d",
+    "revision": "f195c33eced28d1cf11c240c84a4b1c0",
     "url": "/profile/index.html"
   },
   {
-    "revision": "b5840055cfb8763253bf",
+    "revision": "86b13cc6031cafa07641",
     "url": "/profile/static/css/2.ccbd3d24.chunk.css"
   },
   {
-    "revision": "e3f2fbe8b3645d4217c9",
+    "revision": "a76789606faf4cc8b73b",
     "url": "/profile/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "b5840055cfb8763253bf",
-    "url": "/profile/static/js/2.286a6937.chunk.js"
+    "revision": "86b13cc6031cafa07641",
+    "url": "/profile/static/js/2.28493022.chunk.js"
   },
   {
-    "revision": "3d795dca65f0e930149f82f6156254a7",
-    "url": "/profile/static/js/2.286a6937.chunk.js.LICENSE.txt"
+    "revision": "1937a0fc6634269e5f47f8181e27fdc7",
+    "url": "/profile/static/js/2.28493022.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e3f2fbe8b3645d4217c9",
-    "url": "/profile/static/js/main.f80d0ca4.chunk.js"
-  },
-  {
-    "revision": "6a9fd9d76e83555192bf71458d0cc897",
-    "url": "/profile/static/js/pdf.worker.entry.dc2ec9d5.worker.js"
-  },
-  {
-    "revision": "ac3df35bcd7a2aa579e062210ce2d521",
-    "url": "/profile/static/js/pdf.worker.entry.dc2ec9d5.worker.js.LICENSE.txt"
+    "revision": "a76789606faf4cc8b73b",
+    "url": "/profile/static/js/main.14e80aac.chunk.js"
   },
   {
     "revision": "9603bd92365aee75a56a",
@@ -38,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "eeb029865d8beb5db928640453126c0c",
     "url": "/profile/static/media/Delicate.eeb02986.jpg"
-  },
-  {
-    "revision": "5ea813f4522bd7ae47aab76610738fab",
-    "url": "/profile/static/media/Resume.5ea813f4.pdf"
   },
   {
     "revision": "aa7e45f453ad44145c37f233ac3c0366",
@@ -62,10 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9351c285914ecba043c0b912590ede7e",
     "url": "/profile/static/media/diagramSvg.9351c285.svg"
-  },
-  {
-    "revision": "8da91497aeed75b88926bb3c0355e0c2",
-    "url": "/profile/static/media/eXpresso.8da91497.jpg"
   },
   {
     "revision": "f5da67a7609484dac3a95faa64478252",
