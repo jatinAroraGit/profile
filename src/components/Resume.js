@@ -2,21 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import '../App.css';
 import background from "../assets/images/blues.jpg";
-
 import { makeStyles } from '@material-ui/core/styles';
-import resume from '../assets/docs/Resume.pdf';
-import Avatar from '@material-ui/core/Avatar';
-import Container from '@material-ui/core/Container';
 import Card from '@material-ui/core/Card';
-import Paper from '@material-ui/core/Paper';
-
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import { Button, Grommet, Sidebar, Nav, Grid, Box } from 'grommet';
+import { Button, Grommet, Box } from 'grommet';
 import { Help, Home } from 'grommet-icons';
 import Typography from '@material-ui/core/Typography';
 import 'typeface-roboto';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -98,7 +90,7 @@ function Resume() {
   return (
     <Grommet plain>
 
-      <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+      <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", paddingBottom: 16, paddingTop: 16 }}>
 
 
         <Card className={classes.cardRoot} variant="outlined">
@@ -122,6 +114,7 @@ function Resume() {
                 <Typography className={classes.pos} color="textSecondary">
                   Full Stack Developer
         </Typography>
+
               </Box>
               <Box direction="column"
                 pad="none"
@@ -137,13 +130,19 @@ function Resume() {
                   <a href="https://github.com/jatinaroraGit">Github</a>
                 </Typography>
               </Box>
+
             </Box>
+            <Typography style={{ marginTop: 10, alignContent: "center", justifyContent: "center", alignSelf: "center" }} color="textSecondary">
+
+              <Button color={'#2193b0'} primary label=" Download Resume (PDF)" href="https://drive.google.com/file/d/1299htPbafwPxbpHdRIFwFOt25_yUf3dr/view?usp=sharing" />
+            </Typography>
           </CardContent>
+
         </Card>
 
         <Box direction="row-responsive"
           pad="none"
-          style={{ margin: 10 }}
+          style={{ margin: 1 }}
           animation="fadeIn">
           <Card className={classes.cardContent} variant="outlined">
             <CardContent>
@@ -154,6 +153,7 @@ function Resume() {
               <Typography variant="body2" component="p">
                 C++
               </Typography>
+
               <Typography variant="body2" component="p">
                 JAVA
               </Typography>
@@ -168,7 +168,7 @@ function Resume() {
           <Card className={classes.cardContent} variant="outlined">
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                FRONT END
+                Front End
         </Typography>
 
               <Typography variant="body2" component="p">
@@ -186,7 +186,7 @@ function Resume() {
           <Card className={classes.cardContent} variant="outlined">
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                BACK END
+                Back End
         </Typography>
 
 
@@ -209,7 +209,7 @@ function Resume() {
           <Card className={classes.cardContent} variant="outlined">
             <CardContent>
               <Typography className={classes.title} color="textSecondary" gutterBottom>
-                DATABASE
+                Database
         </Typography>
 
               <Typography variant="body2" component="p">
@@ -241,6 +241,9 @@ function Resume() {
               <Typography variant="body2" component="p">
                 SDLC
               </Typography>
+              <Typography variant="body2" component="p">
+                AGILE
+              </Typography>
 
             </CardContent>
           </Card>
@@ -271,27 +274,57 @@ function Resume() {
           animation="fadeIn"
         >
 
-          <Box pad="large"
+          <Box pad="small"
             animation="fadeIn"
 
-            background="#FFFFFF" style={{ alignItems: "center", justifyContent: "center", width: 400 }}>
-            <h5>Work Experience</h5>
-            <h6>Programmer at Logistics Software Corp</h6>
-            <p></p>
+            background="#FFFFFF" style={{ width: 400 }}>
+            <h5 style={{ margin: 2 }}>Work Experience</h5>
+            <h6 style={{ margin: 2, color: '#2193b0' }}> Software Programmer</h6>
+            <h6 style={{ margin: 2, fontSize: 16 }}>Logistics Software Corp</h6>
+            <p style={{ margin: 2, fontSize: 16 }}>Richmond Hill, Ontario</p>
+            <p style={{ margin: 2, fontSize: 16 }}>May 2018 - February 2019</p>
+            <p style={{ margin: 2, fontSize: 16 }}>February 2020 - May 2020</p>
+
           </Box>
-          <Box pad="large" background="#000000" style={{ width: 400 }} >
-            <h5>Education</h5>
-            <h6>Advance Diploma in Computer Programming and Analysis</h6>
+          <Box pad="small" background="#000000" style={{ width: 400 }} >
+            <h5 style={{ margin: 2 }}>Education</h5>
+            <h6 style={{ margin: 2, color: '#2193b0' }}>Advance Diploma in Computer Programming and Analysis</h6>
+            <h6 style={{ margin: 2 }}>
+              Seneca College of Applied Arts and Technology
+            </h6>
+            <p style={{ margin: 2, fontSize: 16 }}>Toronto, Ontario</p>
+            <p style={{ margin: 2, fontSize: 16 }}>January 2017 - April 2020</p>
+            <p style={{ margin: 2, fontSize: 16 }}>GPA of 3.8 out of 4.0</p>
+
           </Box>
         </Box>
 
+        <Box
 
+          pad="small"
+          style={{ margin: 10, width: 800 }}
+          animation="fadeIn"
+          background="#FFFFFF"
+        >
+          <h3 style={{ margin: 4 }}>Projects</h3>
+          <h4 style={{ margin: 2, color: "#2193b0" }}>Recipe Box</h4>
+          <p style={{ margin: 2, fontSize: 16 }}>An application developed for iOS, Android and Web using React Native on the client side and Node Js and Express for the back end to develop a RESTful API based on MVC architecture.
+         </p>
+          <p style={{ margin: 2, fontSize: 16 }}> <a href="https://github.com/jatinAroraGit/recipe-box-api" style={{ color: "#2193b0" }}> Source Code for Back End</a> </p>
+          <p style={{ margin: 2, fontSize: 16 }}> <a href="https://github.com/jatinAroraGit/recipe-box-app" style={{ color: "#2193b0" }}> Source Code for Front End </a>
+          </p>
+          <h4 style={{ margin: 2, color: "#2193b0", paddingTop: 10 }}>Telescope</h4>
+          <p style={{ margin: 2, fontSize: 16 }}>Telescope was an open-source project by Seneca CDOT. The project was aimed at developing a responsive website which contains all the blog posts (submitted by students or simply by any RSS feed link). The feeds or blog posts were then filtered and processed to be displayed to the user browsing the Telescope website. </p>
+          <p style={{ margin: 2, fontSize: 16 }}><a href="https://github.com/Seneca-CDOT/telescope" style={{ color: "#2193b0" }}>Project Page</a></p>
+          <h4 style={{ margin: 2, color: "#2193b0", paddingTop: 10 }}>Open Source Contributions</h4>
+          <p style={{ margin: 2, fontSize: 16 }}>Contributed to many open source projects and collabrated with the community to fix issues, implement features and test software. Worked on projects built with Python, Java, C, Javascript and Kotlin</p>
+          <p style={{ margin: 2, fontSize: 16 }}><a href="https://github.com/jatinAroraGit" style={{ color: "#2193b0" }}>Github Profile</a></p>
+
+
+        </Box>
 
       </header>
-      <div>
 
-
-      </div>
     </Grommet>
   );
 }

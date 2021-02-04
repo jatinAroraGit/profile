@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import background from "../assets/images/eXpresso.jpg";
+import background from "../assets/images/blues.jpg";
 
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
@@ -55,30 +55,37 @@ function About() {
 
       <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
 
+        <Box direction="row-responsive"
+          pad="none"
+          style={{ margin: 10 }}
+          animation="fadeIn">
+          <Card className={classes.cardRoot} variant="outlined">
+            <CardContent>
+              <Typography className={classes.title} color="textSecondary" gutterBottom>
+                About This Website
+        </Typography>
 
-        <Card className={classes.cardRoot} variant="outlined">
-          <CardContent>
-            <Typography className={classes.title} color="textSecondary" gutterBottom>
-              About This Website
-        </Typography>
-            <Typography variant="h5" component="h2">
-              Built with React
-        </Typography>
-            <Typography className={classes.pos} color="textSecondary">
-              UI Frameworks
-        </Typography>
-            <Typography variant="body2" component="p">
-              <a href="https://v2.grommet.io/">Grommet</a>
-            </Typography>
-            <Typography variant="body2" component="p">
-              <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
-            </Typography>
-            <Typography variant="body2" component="p">
-              <a href="https://material-ui.com/">Material UI</a>
-            </Typography>
-          </CardContent>
-        </Card>
+              <Typography variant="h5" component="h2">
+                <h3 style={{ margin: 2 }}> Developed by Jatin Arora </h3>
+                <h5 style={{ margin: 2 }}>   Built with React </h5>
+              </Typography>
+              <h5 style={{ margin: 2 }}>
+                UI Frameworks Used
+      </h5>
+              <Typography variant="body2" component="p">
+                <a href="https://v2.grommet.io/">Grommet</a>
+              </Typography>
+              <Typography variant="body2" component="p">
+                <a href="https://react-bootstrap.github.io/">React Bootstrap</a>
+              </Typography>
+              <Typography variant="body2" component="p">
+                <a href="https://material-ui.com/">Material UI</a>
+              </Typography>
+            </CardContent>
+          </Card>
+        </Box>
       </header>
+
 
     </Grommet>
   );
