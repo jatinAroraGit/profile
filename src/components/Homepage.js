@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import background from "../assets/images/blues.jpg";
-import tilesSvg from "../assets/images/svgTiles.svg";
+import tilesSvg from "../assets/images/Hydrogen.jpg";
 import svgBg from "../assets/images/bgSVG.svg";
 import { makeStyles } from '@material-ui/core/styles';
 import { useState, useEffect } from 'react'
@@ -34,14 +34,15 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     height: 140,
     width: 140,
-    //backgroundColor: "#EF9A9A",
+    //backgroundColor: "#81D4FA",
     //backgroundImage: `url(${svgBg})`,
-    backgroundImage: `url(${tilesSvg})`,
-
+    //backgroundImage: `url(${tilesSvg})`,
+    backgroundColor: 'rgba(52, 52, 52, 0.9)',
     justifyContent: "center"
     , textAlign: "center",
     color: "#FFFFFF"
-    , padding: 4
+    , padding: 4,
+
   },
   paperRound: {
     height: 'auto',
@@ -184,17 +185,16 @@ function Homepage() {
                 <Grid style={{ margin: 2, alignItems: "center" }}>
                   <Paper className={classes.paper}  >
                     <Box align="center">
-                      <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/diagramSvg.svg')} className={classes.medium} />
-                      <h3>Analysis</h3>
+                      <Avatar style={{ alignSelf: "center", marginTop: 2 }} alt="analysis" src={require('../assets/images/diagramSvg.svg')} className={classes.medium} />
+                      <h3 style={{ margin: 2 }}>Analysis</h3>
                     </Box>
                   </Paper>
 
                 </Grid>
                 <Grid style={{ margin: 2 }}>
                   <Paper className={classes.paper} onClick={() => setShowModal(true)}  > <Box align="center">
-                    <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/website-svgrepo-com.svg')} className={classes.medium} />
-                    <h3>Front End</h3>
-                    <Button style={{ margin: 2 }} primary label="Open" onClick={() => setShowModal(true)} />
+                    <Avatar style={{ alignSelf: "center", marginTop: 2 }} alt="analysis" src={require('../assets/images/website-svgrepo-com.svg')} className={classes.medium} />
+                    <h3 style={{ margin: 2 }}>Front End</h3>
 
                   </Box>
                   </Paper>
@@ -203,8 +203,8 @@ function Homepage() {
                 <Grid style={{ margin: 2 }}>
                   <Paper className={classes.paper}  >
                     <Box align="center">
-                      <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/code-svgrepo-com.svg')} className={classes.medium} />
-                      <h3>Back End</h3>
+                      <Avatar style={{ alignSelf: "center", marginTop: 2 }} alt="analysis" src={require('../assets/images/code-svgrepo-com.svg')} className={classes.medium} />
+                      <h3 style={{ margin: 2 }}>Back End</h3>
                     </Box>
                   </Paper>
 
@@ -213,8 +213,8 @@ function Homepage() {
 
                   <Paper className={classes.paper}  >
                     <Box align="center">
-                      <Avatar style={{ alignSelf: "center" }} alt="analysis" src={require('../assets/images/database-svgrepo-com.svg')} className={classes.medium} />
-                      <h3>Database</h3>
+                      <Avatar style={{ alignSelf: "center", marginTop: 2 }} alt="analysis" src={require('../assets/images/database-svgrepo-com.svg')} className={classes.medium} />
+                      <h3 style={{ margin: 2 }}>Database</h3>
                     </Box>
                   </Paper>
 

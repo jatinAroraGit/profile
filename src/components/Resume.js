@@ -60,7 +60,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center"
     , textAlign: "center",
     color: "#FFFFFF"
-    , padding: 4
+    , padding: 4,
+
   },
   paperRound: {
     height: 'auto',
@@ -134,7 +135,7 @@ function Resume() {
             </Box>
             <Typography style={{ marginTop: 10, alignContent: "center", justifyContent: "center", alignSelf: "center" }} color="textSecondary">
 
-              <Button color={'#2193b0'} primary label=" Download Resume (PDF)" href="https://drive.google.com/file/d/1299htPbafwPxbpHdRIFwFOt25_yUf3dr/view?usp=sharing" />
+              <Button color={'#2193b0'} primary label=" Download Resume (PDF)" href="https://www.dropbox.com/s/r1aejq3tzcfn3tp/Resume.pdf?dl=0" />
             </Typography>
           </CardContent>
 

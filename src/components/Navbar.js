@@ -94,9 +94,6 @@ function Navbar() {
                   <Button icon={<Mail />} hoverIndicator primary onClick={() => window.open('mailto:jatin.arora08@outlook.com')} />
                 </Link>
 
-                <Link to="/notFound" >404</Link>
-                <Link to="/dev" >DEV</Link>
-
 
 
               </Nav>
