@@ -134,7 +134,7 @@ function Homepage() {
 
       <header className="App-header" style={{ shadows: ["none"], padding: 2, backgroundImage: `url(${background})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
 
-        <Avatar alt="Jatin Arora" src={require('../assets/images/letterJ.png')} className={classes.avatar} />
+        <Avatar alt="Jatin Arora" src={require('../assets/images/newLogo2.png')} className={classes.avatar} />
         <Card className={classes.cardRoot} variant="outlined">
           <CardContent>
             <Typography className={classes.title} color="textSecondary" gutterBottom>
